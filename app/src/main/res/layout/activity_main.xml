@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:id="@+id/ma_container"
+    >
+    <fragment
+        android:id="@+id/fragment_products"
+        android:name="com.example.smaik.fragmentproj.ProductFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="50"
+        />
+    <fragment
+        android:id="@+id/fragment_product_description"
+        android:name="com.example.smaik.fragmentproj.ProductDescriptionFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="50"/>
+
+
+</LinearLayout>
